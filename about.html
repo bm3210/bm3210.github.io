@@ -1,147 +1,353 @@
----
-layout: page
-title: "About"
-description: "Hey, this is BY."
-header-img: "img/post-bg-rwd.jpg"
----
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+<title>关于我们-美若舞蹈</title>
+<meta name="keywords" content="芭蕾舞培训,古典舞培训,民间舞培训,现代舞培训,舞蹈培训">
+<meta name="description" content="美若舞蹈艺术中心成立于2015年，希望将舞蹈之美，通过教育、表演、公益活动等多种形式，传递给更多人，使美若成为舞蹈文化交流与学习的平台。艺术中心定期举办各类沙龙、大师课、放映活动，并为不同年龄段的儿童和青少年提供专业的舞蹈课程，以科学的训练体系、综合全面的教学内容，开启孩子的心智，修炼挺拔的心态，培养优雅的举止。中心还针对成年人的需求，将专业舞蹈教育中健身、塑形、舒展身心的元素加以研究和提炼，形成独具特色的成人舞蹈课程。艺术中心还专门成立了“天使舞蹈基金”，用于教育资助、艺术交流、创作扶持等领域。作为世界上最古老的艺术门类，舞蹈源自人类的本能，是内心美好体验的源泉。">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="apple-touch-icon" href="apple-touch-icon.png.html">
+<link rel="shortcut icon" href="http://img.meiruowudao.com/meiruo/icon/sub_logo.jpg" type="image/x-icon" />
+<link rel="stylesheet" href="s/styles/main.css">    <link rel="stylesheet" href="s/styles/style2.css">
+</head>
+<body>
+<div class="head head@@type">
+    <div class="container clearfix">
+        <a href="index.html" class="logo fl" style="height: 100px;display: block;">
+            <img src="http://img.meiruowudao.com/meiruo/icon/logo.jpg" alt="" height="80" style="position: relative; top: 10px;">
+        </a>
+        <div class="fr">
+            <ul class="nav fl">
+                <li >
+                    <a href="index.html">首页</a>
+                </li>
+                <li >
+                    <a href="course.html">课程体系</a>
+                </li>
+                <li >
+                    <a href="teacher.html">师资力量</a>
+                </li>
+                <li >
+                    <a href="video.html">美若影像</a>
+                </li>
+                <li >
+                    <a href="news.html">新闻动态</a>
+                </li>
+                <li  class="active" >
+                    <a href="about.html">关于我们</a>
+                </li>
 
-<!-- Language Selector -->
-<!-- <select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
-    <option value="0" selected> 中文 Chinese </option>
-    <option value="1"> 英文 English </option>
-</select> -->
-
-<!-- Chinese Version -->
-<div class="zh post-container">
-
-    <!--copied from markdown -->
-    <blockquote><p>冰冻三尺 非一日之寒<br>
-    积土成山 非斯须之作</p></blockquote>
-
-    <p>Hey，我是<strong>柏荧(BY)</strong>，一只iOS程序猿，现在厦门工作。</p>
-
-    <p>工作、学习之余，我还是一个健身爱好者，同时也非常喜欢拳击。</p>
-
-    <p>这是我的利用 <a href="https://pages.github.com/">GitHub Pages</a> 与 <a href="http://jekyll.com.cn/">Jekyll</a> 搭建的 个人博客。我在GitHub主页<a href="https://github.com/qiubaiying">👉GitHub·BY</a> 与 简书主页<a href="https://http://www.jianshu.com/u/e71990ada2fd">👉BY</a>。如果有什么问题，欢迎提出探讨~</p>
-
-    <p></p>
-    
-    <h5>Talks</h5>
-
-    <ul>
-        <li><a href="https://github.com">GitHub</a></li>
-        <li><a href="http://jekyll.com.cn/">jekyll</a></li>
-        <li><a href="http://huangxuan.me/">Hux</a></li> 
-        <li><a href="https://analytics.google.com/analytics">Google Analytics</a></li>
-    </ul>
-</div>
-
-<!-- English Version -->
-<!-- <div class="en post-container">
-    <blockquote><p>Yet another iOS Developer. <br>
-    Yet another Life-long Student.</p></blockquote>
-
-    <p>Hi, I am <strong>Baiying Qiu</strong>，you can call me <strong>BY</strong>. I am an iOS software engineer and currently working in Xiamen</p>
-
-    <p>This is my personal blog, through making Github Pages and Jekyll.My GitHub  👉 <a href="http://github.com/qiubaiying">Github·BY</a>.</p>
-    
-    <p>I am a sports enthusiast, I like fitness, running and boxing.</p>
-
-    <h5>Talks</h5>
-
-    <ul>
-    <li><a href="https://github.com">GitHub</a></li>
-    <li><a href="http://jekyll.com.cn/">jekyll</a></li>
-    <li><a href="https://pages.github.com/">GitHub Pages</a></li>
-    <li><a href="https://qiubaiying.github.io">BY</a></li>
-    </ul>
-</div> -->
-
-<!-- Handle Language Change -->
-<script type="text/javascript">
-    // get nodes
-    var $zh = document.querySelector(".zh");
-    var $en = document.querySelector(".en");
-    var $select = document.querySelector("select");
-
-    // bind hashchange event
-    window.addEventListener('hashchange', _render);
-
-    // handle render
-    function _render(){
-        var _hash = window.location.hash;
-        // en
-        if(_hash == "#en"){
-            $select.selectedIndex = 1;
-            $en.style.display = "block";
-            $zh.style.display = "none";
-        // zh by default
-        }else{
-            // not trigger onChange, otherwise cause a loop call.
-            $select.selectedIndex = 0;
-            $zh.style.display = "block";
-            $en.style.display = "none";
-        }
-    }
-
-    // handle select change
-    function onLanChange(index){
-        if(index == 0){
-            window.location.hash = "#zh"
-        }else{
-            window.location.hash = "#en"
-        }
-    }
-
-    // init
-    _render();
-</script>
-
-
-<!-- Gitalk 评论 start  -->
-{% if site.gitalk.enable %}
-<!-- Gitalk link  -->
-<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
-
-<div id="gitalk-container"></div>
-    <script type="text/javascript">
-    var gitalk = new Gitalk({
-    clientID: '{{site.gitalk.clientID}}',
-    clientSecret: '{{site.gitalk.clientSecret}}',
-    repo: '{{site.gitalk.repo}}',
-    owner: '{{site.gitalk.owner}}',
-    admin: ['{{site.gitalk.admin}}'],
-    distractionFreeMode: {{site.gitalk.distractionFreeMode}},
-    id: 'about',
-    });
-    gitalk.render('gitalk-container');
-</script>
-{% endif %}
-<!-- Gitalk end -->
-
- <!-- disqus 评论框 start  -->
-{% if site.disqus.enable %}
-
-<div class="comment">
-    <div id="disqus_thread" class="disqus-thread">
+            </ul>
+            <div class="hotline fl">
+                <i class="iconfont icon-dianhua f24 text-sub"></i>
+                <span class="text-primary">010-84787828</span>
+            </div>
+        </div>
     </div>
 </div>
-<!-- disqus 评论框 end -->
+<div class="swiper-container swiper-banner" style="background-image:url('http://img.meiruowudao.com/meiruo/icon/banner_bg.png' );height:570px;clear:both;">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide bg-center lazy_img" data-original="//img.meiruowudao.com/meiruo/icon/about_us.jpg">
+            <div class="container ban-box">
+                <div class="sub f20 text-title">使命</div>
+                <div class="main-title f30 text-title">让生活更艺术</div>
+                <div class="sub f20 text-title">愿景</div>
+                <div class="sub-title f30 text-title">成为中国最专业的舞蹈艺术教育机构</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="introduce">
+        <div class="left-title">
+            <div class="title text-title f40">
+                <h1>美若简介</h1>
+            </div>
+            <div class="title-sub f14 text-sub">
+                愿将美好带进更多人的生活
+            </div>
+            <div class="title-arrow" style="background-image: url('http://img.meiruowudao.com/meiruo/icon/p14.png')"></div>
+        </div>
+        <div class="right-content">
+            <div class="intro-content">
+                <div class="line-p text-content">
+                    北京美若舞蹈艺术中心成立于2015年，希望将舞蹈之美，通过教育、表演、公益活动等多种形式，传递给更多人，使美若成为舞蹈文化交流与学习的平台。
+                </div>
+                <div class="line-p text-content">
+                    艺术中心定期举办各类沙龙、大师课、放映活动，并为不同年龄段的儿童和青少年提供专业的舞蹈课程，以科学的训练体系、综合全面的教学内容，开启孩子的心智，修炼挺拔的心态，培养优雅的举止。中心还针对成年人的需求，将专业舞蹈教育中健身、塑形、舒展身心的元素加以研究和提炼，形成独具特色的成人舞蹈课程。
+                </div>
+                <div class="line-p text-content">
+                    艺术中心还专门成立了“天使舞蹈基金”，用于教育资助、艺术交流、创作扶持等领域。作为世界上最古老的艺术门类，舞蹈源自人类的本能，是内心美好体验的源泉。
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="swiper-container product-show" style="height:310px">
+    <div class="swiper-wrapper">
+                <div class="swiper-slide lazy">
+            <div class="img-shadow"></div>
+            <img data-original=" http://img.meiruowudao.com/meiruo/news/100/nrPxM4fcaPm4vj8cyqfl.jpg!zml  " class="lazy_img auto" src="http://img.meiruowudao.com/meiruo/icon/blank.gif" alt="尚都">
+        </div>
+                <div class="swiper-slide lazy">
+            <div class="img-shadow"></div>
+            <img data-original=" http://img.meiruowudao.com/meiruo/news/100/4WoZM4QO42mE0k6fUYDh.jpg!zml  " class="lazy_img auto" src="http://img.meiruowudao.com/meiruo/icon/blank.gif" alt="尚都">
+        </div>
+                <div class="swiper-slide lazy">
+            <div class="img-shadow"></div>
+            <img data-original=" http://img.meiruowudao.com/meiruo/news/100/HZ6xbOQhsJwIW9YT7FfS.jpg!zml  " class="lazy_img auto" src="http://img.meiruowudao.com/meiruo/icon/blank.gif" alt="尚都店">
+        </div>
+                <div class="swiper-slide lazy">
+            <div class="img-shadow"></div>
+            <img data-original=" http://img.meiruowudao.com/meiruo/news/000/vLpRXytjPHBDnejnsmtC.jpg!zml  " class="lazy_img auto" src="http://img.meiruowudao.com/meiruo/icon/blank.gif" alt="门店实景图5">
+        </div>
+                <div class="swiper-slide lazy">
+            <div class="img-shadow"></div>
+            <img data-original=" http://img.meiruowudao.com/meiruo/news/000/bRxTHxprbGjxAygtTfCg.jpg!zml  " class="lazy_img auto" src="http://img.meiruowudao.com/meiruo/icon/blank.gif" alt="门店实景图4">
+        </div>
+                <div class="swiper-slide lazy">
+            <div class="img-shadow"></div>
+            <img data-original=" http://img.meiruowudao.com/meiruo/news/000/hXeaGmiwSutsWD1K4eOT.jpg!zml  " class="lazy_img auto" src="http://img.meiruowudao.com/meiruo/icon/blank.gif" alt="门店实景图3">
+        </div>
+                <div class="swiper-slide lazy">
+            <div class="img-shadow"></div>
+            <img data-original=" http://img.meiruowudao.com/meiruo/news/000/VZGkRKBN8uoD2w0OBbU5.jpg!zml  " class="lazy_img auto" src="http://img.meiruowudao.com/meiruo/icon/blank.gif" alt="门店实景图2">
+        </div>
+                <div class="swiper-slide lazy">
+            <div class="img-shadow"></div>
+            <img data-original=" http://img.meiruowudao.com/meiruo/news/000/D6d8qccMsO7ayJ3WHL69.jpg!zml  " class="lazy_img auto" src="http://img.meiruowudao.com/meiruo/icon/blank.gif" alt="门店实景图1">
+        </div>
+            </div>
+</div>
+<div class="container">
+    <div class="msg-for-you" style="background-image: url('http://img.meiruowudao.com/meiruo/icon/p16.png');">
+        <div class="president-img lazy">
+            <img data-original="//img.meiruowudao.com/meiruo/icon/boss02.jpg" src="http://img.meiruowudao.com/meiruo/icon/blank.gif" class="lazy_img auto" alt="">
+        </div>
+        <div class="president-say">
+            <div class="sub-title text-sub">致美若学员的一封信</div>
+            <div class="title f30 text-title">献给即将绽放的你</div>
+            <div class="title-arrow" style="background-image: url('http://img.meiruowudao.com/meiruo/icon/p14.png');"></div>
+            <div class="content text-content">
+                <p>亲爱的美若学员，您好：</p>
+                <p class="text-indent">
+                    此刻，忐忑，期待，兴奋，我以最深情的笔，落下这份心情！曾经我用一段舞蹈，做了小学时转新校新班的自我介绍，那一刻，我几乎赢得了所有在场老师和同学们的欣赏的目光，那份美好已深深铭刻在我少女时代的记忆里...彼时起，舞蹈注定将影响我的一生，如影随形，深存于心。
+                </p>
+                <p class="text-indent">
+                    97年我在京从零创业，直至带领公司成为了中国家装行业的第一家上市公司。期间，我走南闯北开了上百家公司，但唯有这次开业，那么与众不同！从未有过的心跳感觉！终于，我和美若相遇了，这颗梦想的种子终于在望京落地了！那简直是梦想和深爱的飘然降临...对我，那么的意义非凡！
+                </p>
+                <p class="text-indent">
+                    我们用心意倾情装饰了中国最美的舞蹈教室，相约了众多最优秀的舞蹈老师，奉献他们的专业、美和爱。我们将“成为中国最专业的舞蹈艺术教育机构”为愿景，“让生活更艺术”为使命。我们坚信，舞蹈是一种生活，生活也是一场舞蹈！身体语言是我们无言的开场白，希望每个女孩、女人，通过练习舞蹈，或拥有一个优美的站姿、坐姿；或唤醒身体的潜能，找到属于自己的身韵、神韵及万方仪态；或开启通往舞蹈艺术殿堂之路，让美和爱点燃生命的能量！
+                </p>
+                <p class="text-indent">
+                    美若团队会倾毕生精力追求舞蹈的梦想和情怀，会用心认真对待每次课程，每个学员，每个细节！今天，虽是一粒小小的种子，但却承载着我们虔诚恒久的追求。畅想未来，我们会不断努力，将这颗种子复制到全国，让散落在民间的舞蹈老师在最美的教室继续舞蹈、传授，让您曾经遗落的舞蹈练习在美若重启！同时，我们将每年资助贫困儿童乡村芭蕾，扶持青年舞蹈艺术家计划等舞蹈慈善事业，用心用舞蹈传递爱...
+                </p>
+                <p class="text-indent">
+                    如果说，身体是灵魂居住的房子，为何不内外兼修，精彩的绽放生命之美呢？来舞蹈吧，您也可以拥有“翩若惊鸿，宛若游龙”的轻盈飘逸！袅袅兮心意，翩翩兮美若；坚持练习吧，让足尖像心灵一样柔软，每个不曾起舞的日子都是对生命的辜负！
+                </p>
+                <p class="text-indent">
+                    亲爱的，日落山水静，美若起舞时，在最美的教室，邂逅最美的自己吧！
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="box7 mt80" style="background-image: url('http://img.meiruowudao.com/meiruo/icon/map.jpg');">
+    <div class="container clearfix">
+        <div class="left fl">
+            <form class="yuyue" id="yuyue" action="www/api/apply.html" method="post">
+                <input type="hidden" name="_token" value="NWwUxzWQUCd6KprwaaRmKwHkhmomGAkXQI0qfdnB">
+                <div class="f36 text-title tc mt60">欢迎预约体验</div>
+                <p class="text-sub f14 tc mt10">输入姓名和手机号码，预约到店体验</p>
+                <div class="mt60 con">
+                    <div class="input">
+                        <div>
+                            <input type="text" placeholder="您的姓名" name="name" validate="required" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="input">
+                        <div>
+                            <input type="text" placeholder="您的电话" name="phone" validate="required|phone" maxlength="11" autocomplete="off">
+                        </div>
+                    </div>
+                    <input type="submit" value="立即预约" class="button button-primary submit mt20">
+                </div>
+            </form>
+        </div>  
+                <div class="right fl">
+            <div class="tab-tit">
+                                <span class="active">望京店</span>
+                                <span >尚都国际中心店</span>
+                            </div>
+            <div class="tab-layer">
+                                <div class="panel" >
+                    <div class="lazy full">
+                        <div class="full bg-center lazy_img" data-original="http://img.meiruowudao.com/meiruo/store/000/0J68CZ39epICkLrpixet.jpg!hm ">
+                        </div>
+                    </div>
+                    <div class="name f36 text-white">望京店</div>
+                    <div class="des f14 text-white">电话：18301515909     010-84787828  | 地址：北京市望京悠乐汇A4-213</div>
+                </div>
 
-<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = "{{site.disqus.username}}";
-    var disqus_identifier = "{{site.disqus.username}}/{{page.url}}";
-    var disqus_url = "{{site.url}}{{page.url}}";
+                                <div class="panel" style="display:none">
+                    <div class="lazy full">
+                        <div class="full bg-center lazy_img" data-original="http://img.meiruowudao.com/meiruo/store/100/VxTVAA4XvKwmXWNVP81c.png!hm ">
+                        </div>
+                    </div>
+                    <div class="name f36 text-white">尚都国际中心店</div>
+                    <div class="des f14 text-white">电话：18211137057     010-5870 0696  | 地址：朝阳区东大桥路8号尚都国际中心3层309</div>
+                </div>
+
+                            </div>
+        </div>
+            </div>
+</div>
+
+
+<script type='text/javascript'>
+    var _ja = _ja || [];
 
     (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        var ja = document.createElement("script");
+        ja.src = "//ja.jiajuol.com/ja.js?3014";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ja, s);
     })();
-</script>
-<!-- disqus 公共JS代码 end -->
-{% endif %}
 
+    (function(m, ei, q, i, a, j, s) {
+        m[i] = m[i] || function() {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+        j = ei.createElement(q),
+            s = ei.getElementsByTagName(q)[0];
+        j.async = true;
+        j.charset = 'UTF-8';
+        j.src = 'https://static.meiqia.com/dist/meiqia.js?_=t';
+        s.parentNode.insertBefore(j, s);
+    })(window, document, 'script', '_MEIQIA');
+    _MEIQIA('entId', 114308);
+</script>
+<div class="footer">
+    <div class="footer-con">
+        <div class="container">
+            <div class="fl slogan">
+                <img src="http://img.meiruowudao.com/meiruo/icon/f1.png" alt="">
+                <!-- <div class="mt10">
+                    <span class="f30">美若舞蹈</span>
+                    <span>Dancing Fairy</span>
+                </div> -->
+                <div class="ml10">舞蹈是一种生活，生活也是一场舞蹈！</div>
+            </div>
+            <dl class="fl contact">
+                <dt>联系我们</dt>
+                <dd class="mt30">
+                    <p>电话：010-84787828</p>
+                    <p>地址：朝阳区望京悠乐汇A4-213</p>
+                    <p>邮箱：meiruodance@163.com</p>
+                </dd>
+            </dl>
+            <div class="fl copyright">
+                <div class="share">
+                    <a href="javascript:void(0);" class="iconfont icon-qunfengkefujingli f50" onclick="_MEIQIA('showPanel')"></a>
+                    <a href="javascript:;" class="iconfont icon-weixin-copy f50">
+                        <div class="qrcode">
+                            <div class="icons"></div>
+                            <div class="lazy full">
+                                <img data-original="//img.meiruowudao.com/meiruo/icon/qrcode.bmp" src="http://img.meiruowudao.com/meiruo/icon/blank.gif" alt="美若舞蹈艺术中心" class="lazy_img auto">
+                            </div>
+                            <span>扫码关注美若舞蹈</span>
+                        </div>
+                    </a>
+                    <a href="https://weibo.com/mrdance" class="iconfont icon-qunfengxinlangweibo f50" target="_blank"></a>
+                </div>
+                <p class="mt10">北京美若舞蹈艺术中心</p>
+                <p class="mt10">© 2019 美若舞蹈 版权所有 <a target="_blank" class="grey_6" href="http://www.miitbeian.gov.cn/">京ICP备18035539号-1</a></p>
+            </div>
+        </div>
+    </div>
+</div><div class="right_slide">
+    <a href="javascript:scroll(0,0)"><i class="iconfont icon-huidaodingbu"></i>返回顶部</a>
+    <a href="javascript:void(0)" class="qr"><i class="iconfont icon-erweima"></i>关注我们
+        <div class="qrcode">
+            <div class="icons"></div>
+            <div class="lazy full">
+                <img data-original="//img.meiruowudao.com/meiruo/icon/qrcode.bmp" src="http://img.meiruowudao.com/meiruo/icon/blank.gif" alt="美若舞蹈艺术中心" class="lazy_img auto">
+            </div>
+            <span>扫码关注美若舞蹈</span>
+        </div>
+    </a>
+    <a href="javascript:void(0)" onclick="_MEIQIA('showPanel')"><i class="iconfont icon-kefu"></i>在线客服</a>
+    <a href="javascript:page.form('/apply');"><i class="iconfont icon-bianji"></i>报名体验</a>
+</div><script src="s/scripts/vendor.js"></script>
+<script src="s/scripts/main.js"></script>
+
+<script>
+    var page = Page({
+        onReady:function(){
+            //banner
+            new Swiper('.swiper-banner', {
+                autoplay: 5000,//可选选项，自动滑动
+                paginationClickable:true,
+            })
+            //product-show
+            var sw = new Swiper('.product-show', {
+                autoplay: 3000,//可选选项，自动滑动
+                slidesPerView : 'auto',//'auto'
+                spaceBetween : 0,
+                loop : true,
+                observer:true,
+                observeParents:true,
+                autoplayDisableOnInteraction : false,
+                onSlideChangeEnd: function (swiper) {
+                    $(window).scroll();
+                }
+            })
+            $(".product-show").mouseenter(function () {//滑过悬停
+                sw.stopAutoplay();//mySwiper 为上面你swiper实例化的名称
+            }).mouseleave(function(){//离开开启
+                sw.startAutoplay();
+            });
+            this.yuyue()
+        },
+        yuyue: function () {
+            var _self = this;
+            this.v({
+                id: 'yuyue',
+                callback: function (e, data) {
+                    layer.load();
+                    var method = e.attr('method');
+                    var dataType = e.attr('data-type');
+                    $.ajax({
+                    url: e[0].action,
+                    dataType: dataType || 'json',
+                    type: method || 'get',
+                    data: data,
+                    success: function (res) {
+                        // 重置状态
+                        layer.closeAll('loading');
+                        // 重置表单
+                        e[0].reset();
+                        layer.msg(res.description);
+                        setTimeout(function(){
+                            window.parent.layer.closeAll();
+                        },1500);
+                    },
+                    error: function () {
+                        layer.closeAll('loading');
+                        setTimeout(function(){
+                            window.parent.layer.closeAll();
+                        },1500);
+                        if (_self.getIeVersion() === 8) {
+                            alert('接口异常')
+                        } else {
+                            layer.msg('接口异常');
+                        }
+                    }
+                    })
+                }
+            })
+        }
+    })
+</script>
+</body>
+</html>

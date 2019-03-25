@@ -1,42 +1,776 @@
----
-layout: page
-description: "Thinking will not overcome fear but action will."
----
+<!doctype html>
+<html>
 
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">
-            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-        <div class="post-content-preview">
-            {{ post.content | strip_html | truncate:200 }}
+<head>
+    <meta charset="utf-8">
+<title>美若舞蹈官网-美若舞蹈</title>
+<meta name="keywords" content="北京少儿舞蹈,北成人舞蹈,北京古典舞,北京现代舞,北京芭蕾舞，美若舞蹈">
+<meta name="description" content="美若舞蹈艺术中心成立于2015年，开设少儿舞蹈、成人舞蹈以及古典舞、现代舞、芭蕾舞等，通过教育、表演、公益活动传递给更多人，使美若成为舞蹈文化交流与学习的平台。">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="apple-touch-icon" href="apple-touch-icon.png.html">
+<link rel="shortcut icon" href="http://img.meiruowudao.com/meiruo/icon/sub_logo.jpg" type="image/x-icon" />
+<link rel="stylesheet" href="s/styles/main.css">    <link rel="stylesheet" href="s/styles/style1.css">
+</head>
+
+<body class="pageIndex">
+<div class="head head@@type">
+    <div class="container clearfix">
+        <a href="index.html" class="logo fl" style="height: 100px;display: block;">
+            <img src="http://img.meiruowudao.com/meiruo/icon/logo.jpg" alt="" height="80" style="position: relative; top: 10px;">
+        </a>
+        <div class="fr">
+            <ul class="nav fl">
+                <li  class="active" >
+                    <a href="index.html">首页</a>
+                </li>
+                <li >
+                    <a href="course.html">课程体系</a>
+                </li>
+                <li >
+                    <a href="teacher.html">师资力量</a>
+                </li>
+                <li >
+                    <a href="video.html">美若影像</a>
+                </li>
+                <li >
+                    <a href="news.html">新闻动态</a>
+                </li>
+                <li >
+                    <a href="about.html">关于我们</a>
+                </li>
+
+            </ul>
+            <div class="hotline fl">
+                <i class="iconfont icon-dianhua f24 text-sub"></i>
+                <span class="text-primary">010-84787828</span>
+            </div>
+        </div>
+    </div>
+</div><div class="swiper-container swiper1" style="background-image:url('http://img.meiruowudao.com/meiruo/icon/banner_bg.png');height:570px;clear:both;">
+    <div class="swiper-wrapper">
+                <div class="lazy full swiper-slide">
+            <a class="full bg-center lazy_img" href="javascript:void:(0)" data-original="http://img.meiruowudao.com/meiruo/news/100/NqBZ4WYSYxWQrU0g9LcX.png!c"  style="background-color:#fff" >
+                <div class="ba_box">
+                    <div class="divied1" style="background: url('http://img.meiruowudao.com/meiruo/icon/divied.png');"></div>
+                    <div class="main-title" style="color:#fff">让生活更艺术</div>
+                    <div class="sub-title" style="color:#fff">舞蹈是一种生活 生活也是一场舞蹈</div>
+                    <div class="divied2" style="background: url('http://img.meiruowudao.com/meiruo/icon/divied.png');"></div>
+                    <div class="en-title">MAKE LIFE MORE ARTISITC DANCE IS A LIFE ADANCE</div>
+                    <div class="online" onclick="_MEIQIA('showPanel')">在线咨询</div>
+                    <div class="online"  onclick="page.form('/apply')" style="left:444px">免费体验</div>
+                    
+                </div>
+            </a>
+        </div>
+                <div class="lazy full swiper-slide">
+            <a class="full bg-center lazy_img" href="javascript:void:(0)" data-original="http://img.meiruowudao.com/meiruo/news/100/Ect1XapHeQeHGdHdk7Nq.png!c"  style="background-color:#fff" >
+                <div class="ba_box">
+                    <div class="divied1" style="background: url('http://img.meiruowudao.com/meiruo/icon/divied.png');"></div>
+                    <div class="main-title" style="color:#fff">让生活更艺术</div>
+                    <div class="sub-title" style="color:#fff">舞蹈是一种生活 生活也是一场舞蹈</div>
+                    <div class="divied2" style="background: url('http://img.meiruowudao.com/meiruo/icon/divied.png');"></div>
+                    <div class="en-title">MAKE LIFE MORE ARTISITC DANCE IS A LIFE ADANCE</div>
+                    <div class="online" onclick="_MEIQIA('showPanel')">在线咨询</div>
+                    <div class="online"  onclick="page.form('/apply')" style="left:444px">免费体验</div>
+                    
+                </div>
+            </a>
+        </div>
+            </div>
+    <div class="swiper-pagination"></div>
+</div>
+<div class="box1 container">
+    <div class="clearfix mt80">
+        <div class="con fr pr">
+            <div class="lazy">
+                <img data-original="//img.meiruowudao.com/meiruo/icon/boss_03.jpg" src="http://img.meiruowudao.com/meiruo/icon/blank.gif" alt="" class="lazy_img pic pa">
+            </div>
+            <div>
+                <span class="f30 text-title">献给即将绽放的你</span>
+                <div class="text-primary mt8">————</div>
+            </div>
+            <p class="mt20 mb20 f14">如果说，身体是灵魂居住的房子，为何不内外兼修，精彩地绽放生命之美呢？来舞蹈吧，您也可以拥有“翩若惊鸿，婉若游龙”的轻盈飘逸！袅袅兮心意，翩翩兮美若；坚持练习吧，让足尖像心灵一样柔软，每个不曾起舞的日子都是对生命的辜负！</p>
+            <img src="http://img.meiruowudao.com/meiruo/icon/sign.jpg" alt="" class="mt20">
+        </div>
+    </div>
+</div>
+<div class="box2 clearfix mt80 bg over">
+    <div class="mt30">
+        <div class="text-title f30 tc">课程体系</div>
+        <p class="text-sub mt10 tc lh2 f14">少儿课程根据3岁—18岁孩子发展特点而设计，以科学的训练体系，开启孩子的心智，修炼挺拔的体态。
+            <br> 成人课程以芭蕾基础训练课和软开素质课为基础课，在此基础上开设：中国古典舞、中外民间舞、现代舞、芭蕾舞等舞蹈剧目课
+        </p>
+        <div class="container">
+            <div class="tab-tit mt30 tc">
+                                <span class="btn  active ">美若少儿专业舞蹈课程</span>
+                                <span class="btn ">成人课程</span>
+                            </div>
+            <div class="tab-layer mt45">
+                                <div class="swiper-container swiper2" style="height:370px">
+                    <div class="swiper-wrapper">
+                                                <a class="swiper-slide" href="course.html">
+                            <div class="lazy zoomBox">
+                                <img data-original=" http://img.meiruowudao.com/meiruo/course/000/ta2pcrNB2mAEC0mi9JPr.jpg!hml " src="http://img.meiruowudao.com/meiruo/icon/blank.gif" class="lazy_img auto zoom" alt="少儿BABY芭蕾">
+                            </div>
+                            <div class="f18 text-title mt20">少儿BABY芭蕾</div>
+                            <div class="f14 mt5">少儿 | 3~4岁</div>
+                            <div class="text-primary mt5">————</div>
+                        </a>
+                                                <a class="swiper-slide" href="course.html">
+                            <div class="lazy zoomBox">
+                                <img data-original=" http://img.meiruowudao.com/meiruo/course/000/gvKdJcojfqkTaZrDIgJR.jpg!hml " src="http://img.meiruowudao.com/meiruo/icon/blank.gif" class="lazy_img auto zoom" alt="幼儿启蒙芭蕾">
+                            </div>
+                            <div class="f18 text-title mt20">幼儿启蒙芭蕾</div>
+                            <div class="f14 mt5">幼儿 | 4~5岁</div>
+                            <div class="text-primary mt5">————</div>
+                        </a>
+                                                <a class="swiper-slide" href="course.html">
+                            <div class="lazy zoomBox">
+                                <img data-original=" http://img.meiruowudao.com/meiruo/course/000/6Tfypia7x8b8xQaWxwte.jpg!hml " src="http://img.meiruowudao.com/meiruo/icon/blank.gif" class="lazy_img auto zoom" alt="少儿阶梯芭蕾">
+                            </div>
+                            <div class="f18 text-title mt20">少儿阶梯芭蕾</div>
+                            <div class="f14 mt5">少儿 | 6~18岁</div>
+                            <div class="text-primary mt5">————</div>
+                        </a>
+                                            </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                                <div class="swiper-container swiper2" style="height:370px">
+                    <div class="swiper-wrapper">
+                                                <a class="swiper-slide" href="course.html">
+                            <div class="lazy zoomBox">
+                                <img data-original=" http://img.meiruowudao.com/meiruo/course/000/bv8tE5gIAdTCXnHNbA0W.jpg!hml " src="http://img.meiruowudao.com/meiruo/icon/blank.gif" class="lazy_img auto zoom" alt="成人芭蕾初级">
+                            </div>
+                            <div class="f18 text-title mt20">成人芭蕾初级</div>
+                            <div class="f14 mt5">成人 | 初级</div>
+                            <div class="text-primary mt5">————</div>
+                        </a>
+                                                <a class="swiper-slide" href="course.html">
+                            <div class="lazy zoomBox">
+                                <img data-original=" http://img.meiruowudao.com/meiruo/course/000/tiKjsvhdUb93cvJO1fSA.jpg!hml " src="http://img.meiruowudao.com/meiruo/icon/blank.gif" class="lazy_img auto zoom" alt="成人芭蕾进阶">
+                            </div>
+                            <div class="f18 text-title mt20">成人芭蕾进阶</div>
+                            <div class="f14 mt5">成人 | 进阶</div>
+                            <div class="text-primary mt5">————</div>
+                        </a>
+                                                <a class="swiper-slide" href="course.html">
+                            <div class="lazy zoomBox">
+                                <img data-original=" http://img.meiruowudao.com/meiruo/course/000/nY2UkJmCMFcHLPyHBiXp.jpg!hml " src="http://img.meiruowudao.com/meiruo/icon/blank.gif" class="lazy_img auto zoom" alt="成人芭蕾中级">
+                            </div>
+                            <div class="f18 text-title mt20">成人芭蕾中级</div>
+                            <div class="f14 mt5">成人 | 中级</div>
+                            <div class="text-primary mt5">————</div>
+                        </a>
+                                                <a class="swiper-slide" href="course.html">
+                            <div class="lazy zoomBox">
+                                <img data-original=" http://img.meiruowudao.com/meiruo/course/000/IjOgFkBzZiRzE0eqpkTe.png!hml " src="http://img.meiruowudao.com/meiruo/icon/blank.gif" class="lazy_img auto zoom" alt="现代舞">
+                            </div>
+                            <div class="f18 text-title mt20">现代舞</div>
+                            <div class="f14 mt5">现代舞</div>
+                            <div class="text-primary mt5">————</div>
+                        </a>
+                                                <a class="swiper-slide" href="course.html">
+                            <div class="lazy zoomBox">
+                                <img data-original=" http://img.meiruowudao.com/meiruo/course/000/toNDFXfnJnUn6JWwRNIP.png!hml " src="http://img.meiruowudao.com/meiruo/icon/blank.gif" class="lazy_img auto zoom" alt="舞蹈身体训练">
+                            </div>
+                            <div class="f18 text-title mt20">舞蹈身体训练</div>
+                            <div class="f14 mt5">软开度素质课</div>
+                            <div class="text-primary mt5">————</div>
+                        </a>
+                                                <a class="swiper-slide" href="course.html">
+                            <div class="lazy zoomBox">
+                                <img data-original=" http://img.meiruowudao.com/meiruo/course/000/7XxGJKXeSNeUe2HG2CvO.png!hml " src="http://img.meiruowudao.com/meiruo/icon/blank.gif" class="lazy_img auto zoom" alt="民间舞（剧目）">
+                            </div>
+                            <div class="f18 text-title mt20">民间舞（剧目）</div>
+                            <div class="f14 mt5">民间舞（剧目）</div>
+                            <div class="text-primary mt5">————</div>
+                        </a>
+                                                <a class="swiper-slide" href="course.html">
+                            <div class="lazy zoomBox">
+                                <img data-original=" http://img.meiruowudao.com/meiruo/course/000/fWicP0SlNcxRbqTSu5Wc.png!hml " src="http://img.meiruowudao.com/meiruo/icon/blank.gif" class="lazy_img auto zoom" alt="古典舞（剧目）  ">
+                            </div>
+                            <div class="f18 text-title mt20">古典舞（剧目）  </div>
+                            <div class="f14 mt5">古典舞（剧目）  </div>
+                            <div class="text-primary mt5">————</div>
+                        </a>
+                                                <a class="swiper-slide" href="course.html">
+                            <div class="lazy zoomBox">
+                                <img data-original=" http://img.meiruowudao.com/meiruo/course/000/W7HezR9ksu88Tas2328d.png!hml " src="http://img.meiruowudao.com/meiruo/icon/blank.gif" class="lazy_img auto zoom" alt="芭蕾变奏（剧目）">
+                            </div>
+                            <div class="f18 text-title mt20">芭蕾变奏（剧目）</div>
+                            <div class="f14 mt5">芭蕾变奏（剧目）</div>
+                            <div class="text-primary mt5">————</div>
+                        </a>
+                                            </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+<div class="box3 mt30 container">
+        <div class="text-title f30 tc">明星师资</div>
+    <p class="text-sub mt10 mb30 tc lh2 f14">美若的教师均毕业于专业舞蹈学校，接受过系统的舞蹈教育理论的培养，并具有丰富的教学实践经验。</p>
+        <div class="swiper-container swiper3 tc" style="height:950px">
+            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                        <div class="swiper-slider-box">
+                        <a href="javascript:page.teacherInfo(100002)">
+                            <div class="lazy zoomBox">
+                                <div class="shadow"></div>
+                                <img data-original=" http://img.meiruowudao.com/meiruo/teacher/000/7VEIu5KFhOSWMrj99ZCP.jpg!zmm " src="http://img.meiruowudao.com/meiruo/icon/blank.gif" class="lazy_img auto" alt="吴俊">
+                            </div>
+                            <div class="f18 text-active mt20">吴俊</div>
+                            <div class="text-sub mt5 ellipsis pdl15 pdr15">艺术总监兼教师，擅长成人芭蕾舞基础教学
+6年以上教学经验</div>
+                            <div class="info">
+                                <p class="text-white f24">吴俊</p>
+                                <p class="text-white mt5">——</p>
+                                <p class="des f14 mt10 pdl15 pdr15">
+                                    艺术总监兼教师，擅长成人芭蕾舞基础教学
+6年以上教学经验
+                                </p>
+                                <div class="btn">老师简介</div>
+                            </div>
+                        </a>
+                    </div>
+                                        <div class="swiper-slider-box">
+                        <a href="javascript:page.teacherInfo(100005)">
+                            <div class="lazy zoomBox">
+                                <div class="shadow"></div>
+                                <img data-original=" http://img.meiruowudao.com/meiruo/teacher/000/PtVleb8VZXu46Jz22tNW.jpg!zmm " src="http://img.meiruowudao.com/meiruo/icon/blank.gif" class="lazy_img auto" alt="郑韵">
+                            </div>
+                            <div class="f18 text-active mt20">郑韵</div>
+                            <div class="text-sub mt5 ellipsis pdl15 pdr15">全职成人芭蕾舞教师
+擅长成人芭蕾基础及剧目表演教学
+5年以上成人教学经验</div>
+                            <div class="info">
+                                <p class="text-white f24">郑韵</p>
+                                <p class="text-white mt5">——</p>
+                                <p class="des f14 mt10 pdl15 pdr15">
+                                    全职成人芭蕾舞教师
+擅长成人芭蕾基础及剧目表演教学
+5年以上成人教学经验
+                                </p>
+                                <div class="btn">老师简介</div>
+                            </div>
+                        </a>
+                    </div>
+                                    </div>
+                                <div class="swiper-slide">
+                                        <div class="swiper-slider-box">
+                        <a href="javascript:page.teacherInfo(100001)">
+                            <div class="lazy zoomBox">
+                                <div class="shadow"></div>
+                                <img data-original=" http://img.meiruowudao.com/meiruo/teacher/000/dlamjJEDelr8oSNqp8Ul.jpg!zmm " src="http://img.meiruowudao.com/meiruo/icon/blank.gif" class="lazy_img auto" alt="王玉嘉">
+                            </div>
+                            <div class="f18 text-active mt20">王玉嘉</div>
+                            <div class="text-sub mt5 ellipsis pdl15 pdr15">少儿全职教师
+5年以上教龄</div>
+                            <div class="info">
+                                <p class="text-white f24">王玉嘉</p>
+                                <p class="text-white mt5">——</p>
+                                <p class="des f14 mt10 pdl15 pdr15">
+                                    少儿全职教师
+5年以上教龄
+                                </p>
+                                <div class="btn">老师简介</div>
+                            </div>
+                        </a>
+                    </div>
+                                        <div class="swiper-slider-box">
+                        <a href="javascript:page.teacherInfo(100009)">
+                            <div class="lazy zoomBox">
+                                <div class="shadow"></div>
+                                <img data-original=" http://img.meiruowudao.com/meiruo/teacher/000/E3gcI0VyiWPMmfWFGlDB.jpg!zmm " src="http://img.meiruowudao.com/meiruo/icon/blank.gif" class="lazy_img auto" alt="管筱娅  ">
+                            </div>
+                            <div class="f18 text-active mt20">管筱娅  </div>
+                            <div class="text-sub mt5 ellipsis pdl15 pdr15">全职少儿教师，4年教学经验</div>
+                            <div class="info">
+                                <p class="text-white f24">管筱娅  </p>
+                                <p class="text-white mt5">——</p>
+                                <p class="des f14 mt10 pdl15 pdr15">
+                                    全职少儿教师，4年教学经验
+                                </p>
+                                <div class="btn">老师简介</div>
+                            </div>
+                        </a>
+                    </div>
+                                    </div>
+                                <div class="swiper-slide">
+                                        <div class="swiper-slider-box">
+                        <a href="javascript:page.teacherInfo(100000)">
+                            <div class="lazy zoomBox">
+                                <div class="shadow"></div>
+                                <img data-original=" http://img.meiruowudao.com/meiruo/teacher/100/Lx5CW43O3f9KDrSKeSLT.jpg!zmm " src="http://img.meiruowudao.com/meiruo/icon/blank.gif" class="lazy_img auto" alt="姜婷">
+                            </div>
+                            <div class="f18 text-active mt20">姜婷</div>
+                            <div class="text-sub mt5 ellipsis pdl15 pdr15">全职教师，少儿舞蹈教学6年，擅长中国舞、民族民间舞、芭蕾舞，少儿舞蹈教学经验丰富，拥有北京舞蹈学院教师资格证</div>
+                            <div class="info">
+                                <p class="text-white f24">姜婷</p>
+                                <p class="text-white mt5">——</p>
+                                <p class="des f14 mt10 pdl15 pdr15">
+                                    全职教师，少儿舞蹈教学6年，擅长中国舞、民族民间舞、芭蕾舞，少儿舞蹈教学经验丰富，拥有北京舞蹈学院教师资格证
+                                </p>
+                                <div class="btn">老师简介</div>
+                            </div>
+                        </a>
+                    </div>
+                                        <div class="swiper-slider-box">
+                        <a href="javascript:page.teacherInfo(100003)">
+                            <div class="lazy zoomBox">
+                                <div class="shadow"></div>
+                                <img data-original=" http://img.meiruowudao.com/meiruo/teacher/000/TUERbRtk3nzGAb4jUmic.jpg!zmm " src="http://img.meiruowudao.com/meiruo/icon/blank.gif" class="lazy_img auto" alt="王维康">
+                            </div>
+                            <div class="f18 text-active mt20">王维康</div>
+                            <div class="text-sub mt5 ellipsis pdl15 pdr15">兼职教师
+擅长成人舞蹈基础教学、民间舞
+4年舞蹈教育及编导经验</div>
+                            <div class="info">
+                                <p class="text-white f24">王维康</p>
+                                <p class="text-white mt5">——</p>
+                                <p class="des f14 mt10 pdl15 pdr15">
+                                    兼职教师
+擅长成人舞蹈基础教学、民间舞
+4年舞蹈教育及编导经验
+                                </p>
+                                <div class="btn">老师简介</div>
+                            </div>
+                        </a>
+                    </div>
+                                    </div>
+                                <div class="swiper-slide">
+                                        <div class="swiper-slider-box">
+                        <a href="javascript:page.teacherInfo(100006)">
+                            <div class="lazy zoomBox">
+                                <div class="shadow"></div>
+                                <img data-original=" http://img.meiruowudao.com/meiruo/teacher/000/btyb4elKmM58VuiP7oxv.jpg!zmm " src="http://img.meiruowudao.com/meiruo/icon/blank.gif" class="lazy_img auto" alt="鲁頔">
+                            </div>
+                            <div class="f18 text-active mt20">鲁頔</div>
+                            <div class="text-sub mt5 ellipsis pdl15 pdr15">成人兼职教师
+国家二级演员
+多年舞台经验</div>
+                            <div class="info">
+                                <p class="text-white f24">鲁頔</p>
+                                <p class="text-white mt5">——</p>
+                                <p class="des f14 mt10 pdl15 pdr15">
+                                    成人兼职教师
+国家二级演员
+多年舞台经验
+                                </p>
+                                <div class="btn">老师简介</div>
+                            </div>
+                        </a>
+                    </div>
+                                    </div>
+                            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+<div class="box4 mt20 over">
+    <div class="mt30 container pr">
+
+        <div class="text-title f30 tc">美若影像</div>
+        <p class="text-sub mt10 tc lh2 f14">我们用心意倾情装饰了中国最美的舞蹈教室，相约了众多最优秀的舞蹈老师，奉献他们的专业、美和爱。</p>
+        <div class="block1 clearfix mt30">
+                        <a class="lazy zoomBox pic1" data-fancybox="images" href="http://img.meiruowudao.com/meiruo/news/100/hXBmdLIqx8mI0Yw0NAsv.jpg!l" target="_blank">
+                <img data-original="http://img.meiruowudao.com/meiruo/news/100/hXBmdLIqx8mI0Yw0NAsv.jpg!l" src="http://img.meiruowudao.com/meiruo/icon/blank.gif" class="lazy_img auto zoom" alt="1">
+            </a>
+                                    <a class="lazy zoomBox pic2" data-fancybox="images" href="http://img.meiruowudao.com/meiruo/news/100/xD2kGbOxlYfhXmRdtRtx.jpg!l" target="_blank">
+                <img data-original="http://img.meiruowudao.com/meiruo/news/100/xD2kGbOxlYfhXmRdtRtx.jpg!hm" src="http://img.meiruowudao.com/meiruo/icon/blank.gif" class="lazy_img auto zoom" alt="2">
+            </a>
+                                        <a class="lazy zoomBox pic3" data-fancybox="images" href="http://img.meiruowudao.com/meiruo/news/100/OCfeS3wFfvkG9jtqBdoN.jpg!l" target="_blank">
+                    <img data-original="http://img.meiruowudao.com/meiruo/news/100/OCfeS3wFfvkG9jtqBdoN.jpg!mh" src="http://img.meiruowudao.com/meiruo/icon/blank.gif" class="lazy_img auto zoom" alt="3">
+                </a>
+                                        <a class="lazy zoomBox pic4" data-fancybox="images" href="http://img.meiruowudao.com/meiruo/news/100/biQhMBosHKGl97mBJCx4.jpg!l" target="_blank">
+                    <img data-original="http://img.meiruowudao.com/meiruo/news/100/biQhMBosHKGl97mBJCx4.jpg!mm" src="http://img.meiruowudao.com/meiruo/icon/blank.gif" class="lazy_img auto zoom" alt="4">
+                </a>
+                                        <a class="lazy zoomBox pic5" data-fancybox="images" href="http://img.meiruowudao.com/meiruo/news/100/ZwzCFTj9wtDElwnOLq75.jpg!l" target="_blank">
+                    <img data-original="http://img.meiruowudao.com/meiruo/news/100/ZwzCFTj9wtDElwnOLq75.jpg!mm" src="http://img.meiruowudao.com/meiruo/icon/blank.gif" class="lazy_img auto zoom" alt="少儿演出">
+                </a>
+                    </div>
+    </div>
+</div>
+
+<div class="box5 mt30 bg over">
+    <div class="container mt30">
+        <div class="text-title f30 tc" style="position: relative;">来自明星的倾情祝福</div>
+        <div class="clearfix mt30">
+            <div class="left">
+                <div class="swiper-container swiper4" style="height:603px">
+                    <div class="swiper-wrapper">
+                                                    <a class="swiper-slide lazy zoomBox video-card" data-src="">
+                                <img data-original="http://img.meiruowudao.com/meiruo/news/000/chz271v1QZRZW5QCaoIK.jpg!hmm" src="http://img.meiruowudao.com/meiruo/icon/blank.gif" class="lazy_img auto zoom" alt="关教授">
+                                <div class="shadow">
+                                    <p class="f22 ellipsis">关教授</p>
+                                    <p class="ellipsis">北京舞蹈学院芭蕾系
+</p>
+                                </div>
+                            </a>
+                                                    <a class="swiper-slide lazy zoomBox video-card" data-src="">
+                                <img data-original="http://img.meiruowudao.com/meiruo/news/000/mPzut1jFd03MvGepk9k7.jpg!hmm" src="http://img.meiruowudao.com/meiruo/icon/blank.gif" class="lazy_img auto zoom" alt="于丹">
+                                <div class="shadow">
+                                    <p class="f22 ellipsis">于丹</p>
+                                    <p class="ellipsis">中国当代知名文化女学者
+</p>
+                                </div>
+                            </a>
+                                                    <a class="swiper-slide lazy zoomBox video-card" data-src="">
+                                <img data-original="http://img.meiruowudao.com/meiruo/news/000/P5OsUiqS9LFR6J5vYhjI.jpg!hmm" src="http://img.meiruowudao.com/meiruo/icon/blank.gif" class="lazy_img auto zoom" alt="李莉">
+                                <div class="shadow">
+                                    <p class="f22 ellipsis">李莉</p>
+                                    <p class="ellipsis">交通广播著名电台主持人
+</p>
+                                </div>
+                            </a>
+                                                    <a class="swiper-slide lazy zoomBox video-card" data-src="">
+                                <img data-original="http://img.meiruowudao.com/meiruo/news/000/xtqHHMF0WjJGLRNH5JlZ.jpg!hmm" src="http://img.meiruowudao.com/meiruo/icon/blank.gif" class="lazy_img auto zoom" alt="朱迅">
+                                <div class="shadow">
+                                    <p class="f22 ellipsis">朱迅</p>
+                                    <p class="ellipsis">中央电视台著名主持人
+</p>
+                                </div>
+                            </a>
+                                            </div>
+                </div>
+                <div class="next"></div>
+            </div>
+            <div class="right" id="video-win">
+                <a>
+                    <img src="http://img.meiruowudao.com/meiruo/icon/video01.jpg" alt="" width="964" height="603">
+                </a>
+                <div class="play-btn" id="video">
+                    <i class="iconfont icon-play"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="box6 container mt40">
+    <div class="text-title f30 tc">新闻资讯</div>
+    <div class="con clearfix mt30">
+                <a class="big a-hover" href="news/100006.html" target="_blank">
+            <div class="lazy zoomBox">
+                <img data-original="http://img.meiruowudao.com/meiruo/news/000/1HdSmu2ftkQQAqnSiYSh.png!m" src="http://img.meiruowudao.com/meiruo/icon/blank.gif" class="lazy_img auto zoom" alt="">
+            </div>
+            <div class="info over">
+                <div class="f18 text-title mt20 ellipsis">村里娃娃进京舞蹈</div>
+                <div class="text-sub f12">2018.07.13</div>
+            </div>
+        </a>
+                                                        <a class="small over" href="news/100005.html" target="_blank">
+            <div class="lazy zoomBox">
+                <img data-original="http://img.meiruowudao.com/meiruo/news/000/bOMYwB90DV9TEfRsSVPV.png!hmm" src="http://img.meiruowudao.com/meiruo/icon/blank.gif" class="lazy_img auto zoom" alt="">
+            </div>
+            <div class="f18 text-title mt10 ellipsis a-hover">童心奇趣，玩转六一</div>
+            <div class="text-sub f12 mt10">2018.07.12</div>
+            <p class="ellipsis3 mt20 a-hover">​不做大人，我们一起玩转六一
+释放你的孩子气和顽皮心</p>
+        </a>
+                                <a class="small over" href="news/100004.html" target="_blank">
+            <div class="lazy zoomBox">
+                <img data-original="http://img.meiruowudao.com/meiruo/news/000/7aG5Ra3GQcP1iJzCljNM.jpg!hmm" src="http://img.meiruowudao.com/meiruo/icon/blank.gif" class="lazy_img auto zoom" alt="">
+            </div>
+            <div class="f18 text-title mt10 ellipsis a-hover">【对话美若仙子】应杰：因为热爱所以纯粹</div>
+            <div class="text-sub f12 mt10">2018.07.12</div>
+            <p class="ellipsis3 mt20 a-hover">应杰
+美若舞蹈学员
+习舞八年 
+令岁月温柔以待</p>
+        </a>
+                                <a class="small over" href="news/100003.html" target="_blank">
+            <div class="lazy zoomBox">
+                <img data-original="http://img.meiruowudao.com/meiruo/news/000/dS60j7BhMESUITFaQ1rx.jpg!hmm" src="http://img.meiruowudao.com/meiruo/icon/blank.gif" class="lazy_img auto zoom" alt="">
+            </div>
+            <div class="f18 text-title mt10 ellipsis a-hover">芭蕾公主学院，魔法为你开启--提高班招生啦</div>
+            <div class="text-sub f12 mt10">2018.07.12</div>
+            <p class="ellipsis3 mt20 a-hover">在芭蕾课上积累舞者的气质，
+在小变奏中展示美丽与自信，
+多一份对芭蕾的投入，
+离舞者的皇冠更近一步，
+芭蕾公主学院，魔法为你开启！</p>
+        </a>
+                            </div>
+</div>
+<div class="box7 mt30" style="background-image: url('http://img.meiruowudao.com/meiruo/icon/map.jpg');">
+    <div class="container clearfix">
+        <div class="left fl">
+            <form class="yuyue" id="yuyue" action="www/api/apply.html" method="post">
+                <input type="hidden" name="_token" value="NWwUxzWQUCd6KprwaaRmKwHkhmomGAkXQI0qfdnB">
+                <input type="hidden" name="enter_type" value="2">
+                <div class="f36 text-title tc mt60">欢迎预约体验</div>
+                <p class="text-sub f14 tc mt10">输入姓名和手机号码，预约到店体验</p>
+                <div class="mt60 con">
+                    <div class="input">
+                        <div>
+                            <input type="text" placeholder="您的姓名" name="name" validate="required" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="input">
+                        <div>
+                            <input type="text" placeholder="您的电话" name="phone" validate="required|phone" maxlength="11" autocomplete="off">
+                        </div>
+                    </div>
+                    <input type="submit" value="立即预约" class="button button-primary submit mt20">
+                </div>
+            </form>
+        </div>
+                <div class="right fl">
+            <div class="tab-tit">
+                                    <span class="active">望京店</span>
+                                    <span >尚都国际中心店</span>
+                            </div>
+            <div class="tab-layer">
+                                    <div class="panel" style=" background-image:url('http://img.meiruowudao.com/meiruo/store/000/0J68CZ39epICkLrpixet.jpg!hm' )">
+                        <div class="name f36 text-white">望京店</div>
+                        <div class="des f14 text-white">电话：18301515909     010-84787828  | 地址：北京市望京悠乐汇A4-213</div>
+                    </div>
+                                    <div class="panel" style="display:none;  background-image:url('http://img.meiruowudao.com/meiruo/store/100/VxTVAA4XvKwmXWNVP81c.png!hm' )">
+                        <div class="name f36 text-white">尚都国际中心店</div>
+                        <div class="des f14 text-white">电话：18211137057     010-5870 0696  | 地址：朝阳区东大桥路8号尚都国际中心3层309</div>
+                    </div>
+                            </div>
+        </div>
+            </div>
+</div>
+
+<div class="iframe-body pf full" style="display: none;" id="shadow">
+    <i class="iconfont icon-close" id="videoclose"></i>
+    <div class="full">
+        <iframe frameborder="0" width="964" height="603" src="https://v.qq.com/iframe/player.html?vid=e01822f4cyn&amp;tiny=0&amp;auto=0"
+          allowfullscreen></iframe>
+    </div>
+  </div>
+<script type='text/javascript'>
+    var _ja = _ja || [];
+
+    (function() {
+        var ja = document.createElement("script");
+        ja.src = "//ja.jiajuol.com/ja.js?3014";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ja, s);
+    })();
+
+    (function(m, ei, q, i, a, j, s) {
+        m[i] = m[i] || function() {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+        j = ei.createElement(q),
+            s = ei.getElementsByTagName(q)[0];
+        j.async = true;
+        j.charset = 'UTF-8';
+        j.src = 'https://static.meiqia.com/dist/meiqia.js?_=t';
+        s.parentNode.insertBefore(j, s);
+    })(window, document, 'script', '_MEIQIA');
+    _MEIQIA('entId', 114308);
+</script>
+<div class="footer">
+    <div class="footer-con">
+        <div class="container">
+            <div class="fl slogan">
+                <img src="http://img.meiruowudao.com/meiruo/icon/f1.png" alt="">
+                <!-- <div class="mt10">
+                    <span class="f30">美若舞蹈</span>
+                    <span>Dancing Fairy</span>
+                </div> -->
+                <div class="ml10">舞蹈是一种生活，生活也是一场舞蹈！</div>
+            </div>
+            <dl class="fl contact">
+                <dt>联系我们</dt>
+                <dd class="mt30">
+                    <p>电话：010-84787828</p>
+                    <p>地址：朝阳区望京悠乐汇A4-213</p>
+                    <p>邮箱：meiruodance@163.com</p>
+                </dd>
+            </dl>
+            <div class="fl copyright">
+                <div class="share">
+                    <a href="javascript:void(0);" class="iconfont icon-qunfengkefujingli f50" onclick="_MEIQIA('showPanel')"></a>
+                    <a href="javascript:;" class="iconfont icon-weixin-copy f50">
+                        <div class="qrcode">
+                            <div class="icons"></div>
+                            <div class="lazy full">
+                                <img data-original="//img.meiruowudao.com/meiruo/icon/qrcode.bmp" src="http://img.meiruowudao.com/meiruo/icon/blank.gif" alt="美若舞蹈艺术中心" class="lazy_img auto">
+                            </div>
+                            <span>扫码关注美若舞蹈</span>
+                        </div>
+                    </a>
+                    <a href="https://weibo.com/mrdance" class="iconfont icon-qunfengxinlangweibo f50" target="_blank"></a>
+                </div>
+                <p class="mt10">北京美若舞蹈艺术中心</p>
+                <p class="mt10">© 2019 美若舞蹈 版权所有 <a target="_blank" class="grey_6" href="http://www.miitbeian.gov.cn/">京ICP备18035539号-1</a></p>
+            </div>
+        </div>
+    </div>
+</div><div class="right_slide">
+    <a href="javascript:scroll(0,0)"><i class="iconfont icon-huidaodingbu"></i>返回顶部</a>
+    <a href="javascript:void(0)" class="qr"><i class="iconfont icon-erweima"></i>关注我们
+        <div class="qrcode">
+            <div class="icons"></div>
+            <div class="lazy full">
+                <img data-original="//img.meiruowudao.com/meiruo/icon/qrcode.bmp" src="http://img.meiruowudao.com/meiruo/icon/blank.gif" alt="美若舞蹈艺术中心" class="lazy_img auto">
+            </div>
+            <span>扫码关注美若舞蹈</span>
         </div>
     </a>
-    <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
-    </p>
-</div>
-<hr>
-{% endfor %}
+    <a href="javascript:void(0)" onclick="_MEIQIA('showPanel')"><i class="iconfont icon-kefu"></i>在线客服</a>
+    <a href="javascript:page.form('/apply');"><i class="iconfont icon-bianji"></i>报名体验</a>
+</div><script src="s/scripts/vendor.js"></script>
+<script src="s/scripts/main.js"></script>
 
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}
+<script>
+    var teacher = {"100002":{"name":"\u5434\u4fca","img":"http:\/\/img.meiruowudao.com\/meiruo\/teacher\/000\/7VEIu5KFhOSWMrj99ZCP.jpg!m","des1":"\u827a\u672f\u603b\u76d1\u517c\u6559\u5e08\uff0c\u64c5\u957f\u6210\u4eba\u82ad\u857e\u821e\u57fa\u7840\u6559\u5b66\n6\u5e74\u4ee5\u4e0a\u6559\u5b66\u7ecf\u9a8c","des2":"\u6bd5\u4e1a\u4e8e\u5317\u4eac\u821e\u8e48\u5b66\u9662\uff0c\u539f\u5e7f\u5dde\u82ad\u857e\u821e\u56e2\u4e3b\u8981\u6f14\u5458\uff0c\u671d\u9633\u6587\u5316\u99869\u5267\u573a\u6f14\u5458\uff0c\u73b0\u4efb\u4e2d\u56fd\u706b\u7bad\u519b\u6587\u5de5\u56e2\u6559\u5458\uff0c\u6f14\u5458\u3002"},"100005":{"name":"\u90d1\u97f5","img":"http:\/\/img.meiruowudao.com\/meiruo\/teacher\/000\/PtVleb8VZXu46Jz22tNW.jpg!m","des1":"\u5168\u804c\u6210\u4eba\u82ad\u857e\u821e\u6559\u5e08\n\u64c5\u957f\u6210\u4eba\u82ad\u857e\u57fa\u7840\u53ca\u5267\u76ee\u8868\u6f14\u6559\u5b66\n5\u5e74\u4ee5\u4e0a\u6210\u4eba\u6559\u5b66\u7ecf\u9a8c","des2":"\u66fe\u83b7\u7b2c\u4e5d\u5c4a\u5168\u56fd\u201c\u6843\u674e\u676f\u201d\u82ad\u857e\u821e\u9752\u5e74\u7ec4\u4f18\u79c0\u8868\u6f14\u5956\uff0c\u4efb\u4e0a\u6d77\u82ad\u857e\u821e\u56e2\u6f14\u5458\u3002\u4e3b\u6f14\u5267\u76ee\u5305\u62ec\uff1a\u4e2d\u56fd\u539f\u521b\u821e\u5267\u300a\u7261\u4e39\u4ed9\u5b50\u300b\uff0c\u300a\u5929\u9e45\u6e56\u300b\u3001\u300a\u7761\u7f8e\u4eba\u300b\u3001\u300a\u80e1\u6843\u5939\u5b50\u300b\u3001\u300a\u5510\u5409\u67ef\u5fb7\u300b\u3001\u300a\u821e\u59ec\u300b\u3001\u300a\u82b1\u6837\u5e74\u534e\u300b\u3001\u300a\u9a6c\u53ef\u6ce2\u7f57\u300b\u3001\u300a\u767d\u6bdb\u5973\u300b\u3001\u300a\u6881\u5c71\u4f2f\u4e0e\u795d\u82f1\u53f0\u300b\u7b49\u3002"},"100001":{"name":"\u738b\u7389\u5609","img":"http:\/\/img.meiruowudao.com\/meiruo\/teacher\/000\/dlamjJEDelr8oSNqp8Ul.jpg!m","des1":"\u5c11\u513f\u5168\u804c\u6559\u5e08\n5\u5e74\u4ee5\u4e0a\u6559\u9f84","des2":"\u6bd5\u4e1a\u4e8e\u5317\u4eac\u821e\u8e48\u5b66\u9662\u82ad\u857e\u821e\u4e13\u4e1a\uff0c\u66fe\u5c31\u804c\u4e8e\u5e7f\u5dde\u82ad\u857e\u821e\u56e2\uff1b\u6559\u5b66\u7ecf\u9a8c\u4e30\u5bcc\uff0c\u66fe\u6307\u5bfc\u591a\u540d\u5b66\u751f\u8003\u5165\u5317\u4eac\u821e\u8e48\u5b66\u9662\u3001\u4e2d\u592e\u6c11\u65cf\u5927\u5b66\u7b49\u56fd\u5185\u91cd\u70b9\u827a\u672f\u9662\u6821\uff0c\u5e26\u9886\u7f8e\u82e5\u5c11\u513f100%\u901a\u8fc7\u5317\u4eac\u821e\u8e48\u5b66\u9662\u82ad\u857e\u821e\u7cfb\u8003\u7ea7\u3002"},"100009":{"name":"\u7ba1\u7b71\u5a05  ","img":"http:\/\/img.meiruowudao.com\/meiruo\/teacher\/000\/E3gcI0VyiWPMmfWFGlDB.jpg!m","des1":"\u5168\u804c\u5c11\u513f\u6559\u5e08\uff0c4\u5e74\u6559\u5b66\u7ecf\u9a8c","des2":"\u64c5\u957f\u5c11\u513f\u3001\u6210\u4eba\u821e\u8e48\u6559\u5b66\uff0c\u66fe\u516c\u6d3e\u8d74\u7f8e\u4ea4\u6d41\uff0c\u83b7\u5317\u4eac\u5e02\u821e\u8e48\u5927\u8d5b\u91d1\u5956\uff0c\u5168\u7403\u534e\u4eba\u624d\u827a\u5927\u8d5b\u4e13\u4e1a\u7ec4\u7b2c\u4e00\u540d\uff0c\u79ef\u7d2f\u4e86\u4e30\u5bcc\u7684\u5e7c\u513f\u82ad\u857e\u542f\u8499\u6559\u5b66\u7ecf\u9a8c\u53ca\u6210\u4eba\u5267\u76ee\u8868\u6f14\uff0c\u4ee3\u8868\u4f5c\u300a\u9752\u57ce\u5c71\u4e0b\u300b\u7b49"},"100000":{"name":"\u59dc\u5a77","img":"http:\/\/img.meiruowudao.com\/meiruo\/teacher\/100\/Lx5CW43O3f9KDrSKeSLT.jpg!m","des1":"\u5168\u804c\u6559\u5e08\uff0c\u5c11\u513f\u821e\u8e48\u6559\u5b666\u5e74\uff0c\u64c5\u957f\u4e2d\u56fd\u821e\u3001\u6c11\u65cf\u6c11\u95f4\u821e\u3001\u82ad\u857e\u821e\uff0c\u5c11\u513f\u821e\u8e48\u6559\u5b66\u7ecf\u9a8c\u4e30\u5bcc\uff0c\u62e5\u6709\u5317\u4eac\u821e\u8e48\u5b66\u9662\u6559\u5e08\u8d44\u683c\u8bc1","des2":"\u6bd5\u4e1a\u4e8e\u6c88\u9633\u97f3\u4e50\u5b66\u9662\u821e\u8e48\u5b66\u9662\uff0c\u5e08\u821e\u5802Zizi\u7426\u7426\u82ad\u857e\u91d1\u724c\u6559\u5e08\u3002\u8363\u83b7\u201c\u84b2\u516c\u82f1\u676f\u201d\u63a8\u65b0\u4eba\u5927\u8d5b\u4f18\u79c0\u5956\uff0c\u201c\u8377\u82b1\u676f\u201d\u821e\u8e48\u5927\u8d5b\u94f6\u5956\u3002\u66fe\u53c2\u4e0e\u5927\u5b66\u751f\u7535\u89c6\u827a\u672f\u8282\u9881\u5956\u665a\u4f1a\u3001CCTV\u4f53\u575b\u98ce\u4e91\u4eba\u7269\u5e74\u5ea6\u8bc4\u9009\u9881\u5956\u76db\u5178\u3001\u4e2d\u592e\u7535\u89c6\u53f0\u8fc7\u5e74\u4e03\u5929\u4e50\u7b49\u821e\u8e48\u521b\u4f5c\u7f16\u5bfc\u3002\u5e26\u9886\u5b66\u751f\u53c2\u52a0\u201c\u7efd\u7f8e\u56fd\u9645\u201d\u821e\u8e48\u5927\u8d5b\u8363\u83b7\u94f6\u5956\u3002"},"100003":{"name":"\u738b\u7ef4\u5eb7","img":"http:\/\/img.meiruowudao.com\/meiruo\/teacher\/000\/TUERbRtk3nzGAb4jUmic.jpg!m","des1":"\u517c\u804c\u6559\u5e08\n\u64c5\u957f\u6210\u4eba\u821e\u8e48\u57fa\u7840\u6559\u5b66\u3001\u6c11\u95f4\u821e\n4\u5e74\u821e\u8e48\u6559\u80b2\u53ca\u7f16\u5bfc\u7ecf\u9a8c","des2":"\u64c5\u957f\u6210\u4eba\u821e\u8e48\u57fa\u7840\u6559\u5b66\u3001\u6c11\u95f4\u821e\uff0c\u56db\u5e74\u821e\u8e48\u6559\u80b2\u53ca\u7f16\u5bfc\u7ecf\u9a8c\u3002\u66fe\u83b7\u7b2c\u5341\u5c4a\u8377\u82b1\u5956\u5341\u4f73\u4f5c\u54c1\u5956\uff0c\u534e\u5317\u4e94\u7701\u821e\u8e48\u6bd4\u8d5b\u8868\u6f14\u4e00\u7b49\u5956\u3002"},"100006":{"name":"\u9c81\u9814","img":"http:\/\/img.meiruowudao.com\/meiruo\/teacher\/000\/btyb4elKmM58VuiP7oxv.jpg!m","des1":"\u6210\u4eba\u517c\u804c\u6559\u5e08\n\u56fd\u5bb6\u4e8c\u7ea7\u6f14\u5458\n\u591a\u5e74\u821e\u53f0\u7ecf\u9a8c","des2":"\u66fe\u5c31\u804c\u4e8e\u5e7f\u5dde\u82ad\u857e\u821e\u56e2\u9886\u821e\uff0c2011\u5e74\u52a0\u5165\u4e2d\u56fd\u56fd\u5bb6\u82ad\u857e\u821e\u56e2\uff0c\u72ec\u821e\u6f14\u5458\u4e3b\u6f14\u4f5c\u54c1\u300a\u5409\u8d5b\u5c14\u300b\uff1b\u9b3c\u738b\u7c73\u5c14\u8fbe\uff1b\u300a\u5802\u5409\u8bc3\u5fb7\u300b\u68ee\u6797\u5973\u738b\uff1b\u300a\u5929\u9e45\u6e56\u300b3\u5927\u5929\u9e45\uff1b\u300a\u821e\u59ec\u300b\u4e09\u4eba\u821e\uff1b\u300a\u5929\u9e45\u4e4b\u6b7b\u300b\u72ec\u821e\uff1b\u300a\u5927\u7ea2\u706f\u7b3c\u9ad8\u9ad8\u6302\u300b\u5927\u592a\u3001\u4e8c\u592a\uff1b\u300a\u7ea2\u8272\u5a18\u5b50\u519b\u300b\u8fde\u957f\uff1b\u300a\u7261\u4e39\u4ead\u300b\u82b1\u795e\u675c\u4e3d\u5a18\uff1b\u300a\u80e1\u6843\u5939\u5b50\u300b\u9e64\u795e\uff1b\u300a\u968f\u519b\u5546\u8d29\u300b\u516d\u4eba\u821e\uff1b\u300a\u9e64\u9b42\u300b\u9e64\u738b\uff1b\u300a\u6881\u795d\u300b\u5316\u8776\u53cc\u4eba\u821e\u7b49\u3002"}};
+</script>
+<script>
+    var page = Page({
+        onReady: function () {
+            this.swiper1();
+            this.swiper2();
+            this.swiper3();
+            this.swiper4();
+            this.yuyue();
+            this.tab2()
+        },
+        swiper1: function () {
+            new Swiper('.swiper1', {
+                autoplay: 5000,
+                paginationClickable: true,
+                loop:true,
+                effect:'fade',
+                pagination: '.swiper-pagination',
+                onSlideChangeEnd: function (swiper) {
+                    $(window).scroll();
+                }
+            })
+        },
+        swiper2: function () {
+            new Swiper('.swiper2', {
+                // autoplay: 5000,
+                paginationClickable: true,
+                slidesPerView: 3,
+                spaceBetween: 15,
+                pagination: '.swiper-pagination',
+                onSlideChangeEnd: function (swiper) {
+                    $(window).scroll();
+                }
+            });
+            $('.tab-tit span').one('click', function () {
+                setTimeout(function () {
+                    $(window).scroll();
+                }, 100)
+            });
+            $('.swiper2').eq(1).hide();
+        },
+        tab2: function() {
+            var i =0
+            setInterval(function(){
+                var length = $('#lunbo span').length
+                if(i >= length){
+                    i = 0
+                }else{
+                    i++
+                }
+                $('#lunbo span').eq(i).trigger('click')
+            },3000)
+            $('.tab-titss span').parents('.tab-titss').siblings('.tab-layer').children('div').css({
+                position:'absolute',
+                top:0,
+                width:'100%'
+            })
+            $('.tab-titss').on('click', 'span', function() {
+                var $this = $(this),
+                    n = $this.index();
+                $this.addClass('active').siblings().removeClass('active');
+                $this.parents('.tab-titss').siblings('.tab-layer').children('div').eq(n).siblings().fadeOut('slow').end().fadeIn('slow');
+            });
+        },
+        swiper3: function () {
+
+            $('#video').on('click',function(e){
+                $('#shadow').toggle('fast')
+                e.stopPropagation()
+                e.preventDefault()
+            })
+            $(document).on('click','.video-card,#video-win',function(e){
+                $('#shadow').toggle('fast')
+                e.stopPropagation()
+                e.preventDefault()
+            })
+            $('#videoclose').on('click',function(e){
+                $('#shadow').toggle('fast')
+                e.stopPropagation()
+            })
+            new Swiper('.swiper3', {
+                // autoplay: 5000,
+                paginationClickable: true,
+                slidesPerView: 4,
+                // prevButton: '.swiper-button-prev',
+                // nextButton: '.swiper-button-next',
+                pagination: '.swiper-pagination',
+                onSlideChangeEnd: function (swiper) {
+                    $(window).scroll();
+                }
+            });
+        },
+        swiper4: function () {
+            var swiper = new Swiper('.swiper4', {
+                nextButton: '.swiper-button-next',
+                // pagination: '.swiper-pagination',
+                direction: 'vertical',
+                slidesPerView: 4,
+                paginationClickable: true,
+                spaceBetween: 1,
+                mousewheelControl: true,
+                loop: true,
+                onSlideChangeEnd: function (swiper) {
+                    $(window).scroll();
+                }
+            });
+            $('.box5 .next').click(function () {
+                swiper.slideNext();
+            });
+        },
+        yuyue: function () {
+            var _self = this;
+            this.v({
+                id: 'yuyue',
+                callback: function (e, data) {
+                    layer.load();
+                    var method = e.attr('method');
+                    var dataType = e.attr('data-type');
+                    $.ajax({
+                        url: e[0].action,
+                        dataType: dataType || 'json',
+                        type: method || 'get',
+                        data: data,
+                        success: function (res) {
+                            // 重置状态
+                            layer.closeAll('loading');
+                            // 重置表单
+                            e[0].reset();
+                            layer.msg(res.description);
+                            setTimeout(function(){
+                                window.parent.layer.closeAll();
+                            },1500);
+                        },
+                        error: function () {
+                            layer.closeAll('loading');
+                            setTimeout(function(){
+                                window.parent.layer.closeAll();
+                            },1500);
+                            if (_self.getIeVersion() === 8) {
+                                alert('接口异常')
+                            } else {
+                                layer.msg('接口异常');
+                            }
+                        }
+                    })
+                }
+            })
+        }
+    })
+</script>
+</body>
+</html>
