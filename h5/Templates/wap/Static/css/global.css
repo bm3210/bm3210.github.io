@@ -1,0 +1,241 @@
+body,h1,h2,h3,h4,h5,dl,dd,dt,p,ul,li,ol{ 
+	margin:0; 
+	padding:0;
+}
+input,select,form,textarea,button {
+	border:none; 
+	margin:0;
+	outline:none; 
+	padding:0;
+}
+h1,h2,h3,h4,h5 {
+	font-weight:normal;
+}
+img { 
+    border:none;
+}
+a { 
+    text-decoration:none;
+}
+* { 
+    font: normal 10px/100% Helvetica, Arial, sans-serif;
+	-webkit-box-sizing: border-box;    
+}
+li {
+	list-style-type:none;
+}
+body,html {
+	width:100%;
+}
+body {
+	background-color: #eee; 
+	padding-top: 3.66666rem;
+}
+.cl { 
+    clear: both; 
+	height: 0; 
+}
+.title{
+	overflow: hidden;
+	padding: 4% 0;
+}
+.title h1{
+	color: #f22d93;
+	font-size: 1.2rem;
+	float: left;
+	border-left: .2rem solid #f22d93;
+	padding-left: .4rem;
+	font-weight: bold;
+}
+.title a{
+	float: right;
+	line-height: 1.4rem;
+	font-size: .9rem;
+	color: #999;
+	font-size: 0.8rem;
+}
+.header{
+	padding: 2%;
+	background-color: #f5f5f5;
+	position: relative;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+}
+.top_main{
+	overflow: hidden;
+}
+.logo{
+	float: left;
+	width: 14rem;
+}
+.logo img{
+	display: block;
+	width: 100%;
+}
+.menu{
+	float: right;
+	margin-top: 3%;
+}
+.menu span{
+	font-size: 1.2rem;
+	color: #104357;
+	background: url("../images/menu.png") no-repeat center right;
+	background-size: 40%;
+	padding-right: 2rem;
+}
+.header ul{
+	display: none;
+	margin-top: .5rem;
+	background-color: rgba(242,45,147,1);
+	padding:1rem 0;
+	position: relative;
+	position: absolute;
+	right: 1%;
+	z-index: 999;
+	width: 36%;
+	text-align: center;
+}
+.header ul span{
+	color: rgba(242,45,147,1);
+	font-size: 1.2rem;
+	position: absolute;
+	top: -.5rem;
+	right: 4%;
+}
+.header ul li a{
+	color: #fff;
+	font-size: 1rem;
+	display: block;
+	line-height: 220%;
+}
+.focus {
+	width: 100%; 
+	position:relative; 
+	overflow:hidden;  
+}
+.focus .hd { 
+    width:100%; 
+	height:1rem;  
+	position:absolute; 
+	z-index:1; 
+	bottom:5px; 
+	text-align:center;  
+}
+.focus .hd ul li { 
+    display:inline-block; 
+	width:.8rem; height:.8rem; 
+	-webkit-border-radius:.8rem; 
+	-moz-border-radius:.8rem; 
+	border-radius:.8rem; 
+	background:#fff; 
+	margin:0 5px;  
+	vertical-align:top; 
+	overflow:hidden; 
+	color: #fff;  
+}
+.focus .hd ul .on { 
+    background:#f00; 
+	color: #f00; 
+}
+.focus .bd { 
+    position:relative; 
+	z-index:0; 
+}
+.focus .bd li img { 
+    height: 40%;
+    width:100%; 
+	display: block; 
+}
+.shadow{
+	box-shadow: 0 2px 8px #999;
+	margin-bottom: 1rem;
+	background-color: #fff;
+}
+.access ul{
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+	padding: 5% 0;
+}
+.access ul li{
+	text-align: center;
+	width: 20%;
+	flex-grow: 1;
+	margin-bottom: 2%;
+}
+.access ul li img{
+	display: block;
+	width: 64%;
+	margin:0 auto;
+}
+.access ul li span{
+	font-size: .9rem;
+	color: #666;
+	display: block;
+	line-height: 240%;
+}
+
+.footer h1{
+	text-align: center;
+	background-color: #f22d93;
+	color: #fff;
+	padding:.8rem 0;
+	font-size: 1rem;
+}
+.footer h1 *{
+	color: #fff;
+	font-size: 1.1rem;
+}
+.footer h2{
+	text-align: center;
+	padding: 1rem 0;
+}
+.footer h2 *{
+	color: #666;
+	font-size: .8rem;
+	line-height: 160%;
+}
+.phone-f {
+	width: 100%; 
+	background: #F00463 url("../images/dsft.jpg") no-repeat center; 
+	background-size: 100%; 
+	height: 4rem; 
+	position: fixed; 
+	z-index: 999; 
+	bottom: 0; 
+	max-width: 640px; 
+}
+.phone-f li {
+	float: left; 
+	text-align: center; 
+	color: #fff; 
+	font-size: 1.3rem; 
+	height: 100%; 
+}
+.phone-f li a {
+	text-indent: -99999px;
+	display: block; 
+	line-height: 4; 
+	font-size: 16px;
+	height: 100%; 
+	color: #fff; 
+	font-weight: bold; 
+}
+.phone-f li font {
+    float: left; 
+}
+.phone-f ul {
+	height: 100%; 
+}
+.phone-f li.ph_ts {
+	border: 0; 
+}
+.f-index { 
+    width:20%;
+}
+.f-tel,.f-kf { 
+    width:40%;
+}
